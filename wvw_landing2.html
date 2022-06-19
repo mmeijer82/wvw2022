@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webdesign Voor Weinig</title>
+    <link rel="stylesheet" href="wvwstyle.css">
+    <style>
+        * {
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width:100%;
+        }
+
+        .landing {
+            min-height:100vh;
+            display:grid;
+            grid-template-columns: repeat(2, minmax(0,1fr));
+
+        }
+
+        .landing__content {
+            align-self: center;
+            justify-self: center;
+            max-width:80%;
+        }
+
+        .landing__image {
+            display:grid;
+            place-content:center;
+            background-position: center;
+            background-image: linear-gradient(51deg,#000000 29%,rgba(0,0,0,0)), url(http://modx.webdesignvoorweinig.nl/wp-content/uploads/2022/01/dreamstimefree_893813-scaled.jpg);
+        }
+
+        .landing__content__image {
+            max-width:30rem;
+        }
+   
+    </style>
+</head> 
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"></div>
+            <nav></nav>
+        </div>
+    </header>
+    <section class="landing">
+        <div class="landing__content">
+            <h1 class="hero__title">Webdesign voor Weinig</h1>
+            <div class="devider"></div>
+            <div class="dflex">
+            <h4 class="hero__subtitle hero__subtitle--ired">webdesign</h4>
+            <h4 class="hero__subtitle hero__subtitle--igray">cms</h4>
+            <h4 class="hero__subtitle hero__subtitle--orange">logo design</h4>
+            
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptates! Quisquam inventore repudiandae commodi sed fuga earum, quaerat ad odit, natus quos iure nihil. Libero neque quidem ad accusamus consequatur. Accusantium, in rem aperiam sequi nobis laudantium dolores eos maiores.</p>
+            <a href="#" class="btn">Button</a>
+        </div>
+        <div class="landing__image">
+            <div class="landing__content__image">
+                <img src="http://modx.webdesignvoorweinig.nl/wp-content/uploads/2022/01/kindpng_6518916.png" alt="">
+            </div>
+        </div>
+               
+    </section>
+</body>
+</html>
