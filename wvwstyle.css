@@ -69,6 +69,7 @@ body {
 }
 
 .btn {
+  
   position: relative;
   padding: 1rem 2rem;
   background: hsla(22, 83%, 54%, 1);
@@ -86,7 +87,7 @@ body {
 
 
 
-.btn::after{
+.btn::after {
   position: absolute;
   content:"";
   top:0;
@@ -96,7 +97,6 @@ body {
   background:hsla(202, 83%, 54%, 0);
   z-index:-1;
   transition:all 0.5s ease;
-
 }
 
 .btn:hover::after {
@@ -157,6 +157,7 @@ header {
 
 .hero__left {
   animation: landingtitle 3s ease;
+
 }
 
 .hero__title {
@@ -210,6 +211,7 @@ h4[class*="hero__subtitle--i"]::after {
 }
 
 .hero__content {
+  
   font-family: Montserrat; 
   color:white; 
   max-width:55ch;
