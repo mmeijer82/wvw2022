@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Option 3</title>
+    <style>
+        * {
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height:100vh;
+        
+        }
+        
+        .container {
+            max-width:80rem;
+            margin:0 auto;
+        }
+
+        header {
+            position: absolute;
+            top: 1em;
+            left:0;
+            right:0;
+            z-index:0;
+        }
+
+        .logo img {
+            max-width: 384px;
+        }
+
+        .hero {
+            min-height:inherit;
+        }
+
+        .herogrid {
+            display:grid;
+            grid-template-columns: 20% 80%;
+            
+        }
+
+        .hero__left {
+            background-color: hsla(0, 0%, 0%, 1);
+
+        }
+
+        .flow > * + * {
+            margin-top:1rem;
+        }
+
+        .hero__right {
+            background-image: linear-gradient(51deg,#000000 29%,rgba(0,0,0,0)), url('http://modx.webdesignvoorweinig.nl/wp-content/uploads/2022/01/dreamstimefree_893813-scaled.jpg');
+            background-size: cover;
+            background-color: hsl(0 0% 0% / 50%);
+            background-blend-mode: overlay;
+            min-height: 100vh;
+            background-attachment: fixed; 
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 0.0625rem + 3vw, 2.5rem);
+  color: white;
+  text-transform: uppercase;
+}
+
+.devider {
+  width:30%;
+  height:2px;
+  background-color: hsla(22, 83%, 54%, 0.68);
+}
+
+.hero__subtitle {
+  font-family: "Montserrat", sans-serif;
+  
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+h4[class*="hero__subtitle--i"]::after {
+  position: relative;
+  content: "\25c9";
+  font-size: 1.5rem;
+  margin:0 10px;
+}
+
+.hero__subtitle--ired {
+  color:#9b0f00;
+}
+
+.hero__subtitle--ired::after {
+  color: #98a1a8;
+}
+
+.hero__subtitle--igray {
+  color:#98a1a8;
+}
+
+.hero__subtitle--igray::after {
+  color: #7a0707; 
+}
+
+.hero__subtitle--orange{
+  color: #db6f23;
+}
+
+.hero__content {
+  font-family: Montserrat; 
+  color:white; 
+  max-width:70ch;
+  font-size: 1rem;
+}
+
+.hero__right {
+  text-align: center;
+  animation: landingimage 5s ease;
+}
+
+.hero__image {
+  width: 40%;
+  margin:0 auto;
+  
+}
+
+.heroimg {
+    justify-self: flex-end;
+}
+
+.dflex {
+    display:flex;
+}
+.btn {
+  position: relative;
+  padding: 1rem 2rem;
+  background: hsla(22, 83%, 54%, 1);
+  display: inline-block;
+  
+  border-top-right-radius: 1.52rem;
+  border-bottom-left-radius: 1.52rem;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+  z-index:0;
+  margin-bottom:2rem;
+
+}
+
+.btn::after{
+  position: absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:hsla(202, 83%, 54%, 0);
+  z-index:-1;
+  transition:all 0.5s ease;
+
+}
+
+.btn:hover::after {
+  top: -6px;
+  background:hsla(0, 83%, 25%, 0.7);
+  border-top-right-radius: 1.52rem;
+  border-bottom-left-radius: 1.52rem;
+
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo container">
+            <img src="https://www.webdesignvoorweinig.nl/wp-content/uploads/2019/03/ww5-2.svg" alt="">
+        </div>
+    </header>
+    <section class="hero herogrid">
+        <div class="hero__left">
+            <nav>
+                <ul>
+                    <li style="color:green;"><h1>Testing</h1></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero__right flow">
+            <h1 class="hero__title">Webdesign voor Weinig</h1>
+            <div class="devider"></div>
+            <div class="dflex">
+              <h4 class="hero__subtitle hero__subtitle--ired">webdesign</h4>
+              <h4 class="hero__subtitle hero__subtitle--igray">cms</h4>
+              <h4 class="hero__subtitle hero__subtitle--orange">logo design</h4>
+            </div>
+            <p class="hero__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, omnis! Culpa debitis illum nostrum ducimus quasi, eveniet alias consectetur incidunt dolorem! Officiis deserunt saepe sit quam pariatur nesciunt consectetur ipsam.</p>
+            <a href="#" class="btn">Laten we Beginnen!</a>
+            <div class="heroimg">
+                <img id="image-52-139" alt="" src="http://modx.webdesignvoorweinig.nl/wp-content/uploads/2022/01/kindpng_6518916.png" class="hero__image"> 
+            </div>
+          </div>
+        
+    </section>
+    <section class="diensten">
+        <div>
+            <h1>Diensten</h1>
+        </div>
+    </section>
+</body>
+</html>

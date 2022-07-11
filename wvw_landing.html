@@ -9,17 +9,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="main.js" defer></script>
 </head>
 <body>
  <header>
-  <div class="container headergrid dgrid">
+  <div class="container headergrid dflex">
     <div class="logo headergrid__left">
-      <img src="https://www.webdesignvoorweinig.nl/wp-content/uploads/2019/03/ww5-2.svg" alt="">
+      <img src="https://www.webdesignvoorweinig.nl/wp-content/uploads/2019/03/ww5-2.svg" alt="Webdesignvoorweinig logo">
     </div>
+    <button class="mobile-nav-toggle" aria-controls="primary-nav"><span class="sr-only" aria-expanded="false">Menu</span></button>
     <nav class="navmenu headergrid__right">
-      <ul class="navmenu__list">
+      <ul id="primary-nav" class="navmenu__list" data-visible="false">
         <li class="navmenu__listitem">
-          <a class="navmenu__link n-1" href="#">Wie zijn wij</a>
+          <a class="navmenu__link n-1" href="#">Diensten</a>
         </li>
         <li class="navmenu__listitem">
           <a class="navmenu__link n-2" href="#">Portfolio</a>
