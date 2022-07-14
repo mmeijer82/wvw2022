@@ -71,11 +71,11 @@ select {
 
 /* utility classes */
 
-.color-primary-400 { color: hsl(var(--clr-primary) / 1); }
-.color-accent-400 { color: hsl(var(--clr-accent-400) / 1);}
-.color-accent-100 { color: hsl(var(--clr-accent-100) / 1);}
-.color-secondary-400 { color: hsl(var(--clr-secondary-400) / 1);}
-.color-secondary-100 { color: hsl(var(--clr-secondary-100) /1);}
+.clr-primary-400 { color: hsl(var(--clr-primary) / 1); }
+.clr-accent-400 { color: hsl(var(--clr-accent-400) / 1);}
+.clr-accent-100 { color: hsl(var(--clr-accent-100) / 1);}
+.clr-secondary-400 { color: hsl(var(--clr-secondary-400) / 1);}
+.clr-secondary-100 { color: hsl(var(--clr-secondary-100) /1);}
 
 .ff-primary-heading { font-family: var(--ff-heading);}
 .ff-body { font-family: var(--ff-body);}
