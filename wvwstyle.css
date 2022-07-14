@@ -277,7 +277,7 @@ h4[class*="hero__subtitle--i"]::after {
   animation: landingimage 5s ease;
 }
 
-.hero__right::before {
+/* .hero__right::before {
   position: absolute;
   content:"";
   top:-30vw;
@@ -286,7 +286,7 @@ h4[class*="hero__subtitle--i"]::after {
   width:60vw;
   height:60vw;
   border-radius:50%;
-}
+} */
 
 .hero__image {
   width: 65%;
