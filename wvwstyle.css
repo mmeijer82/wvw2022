@@ -1,7 +1,7 @@
 /* custom properties */
 
 :root {
-  
+  --clr-primary-400: 6 100% 30%; 
   /* dark color
   --clr-primary-400: ;
   
@@ -76,6 +76,8 @@ select {
 
 
 /* utility classes */
+
+.color-primary-400 { color: hsl(var(--clr-primary-400) / 1);}
 
 .ff-primary-heading { font-family: var(--ff-heading);}
 .ff-body { font-family: var(--ff-body);}
