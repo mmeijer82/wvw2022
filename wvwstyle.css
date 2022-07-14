@@ -15,15 +15,16 @@
   --clr-neutral-900: ; */
 
   /* Font family */
-  /* --ff-primary: 'Montserrat', sans-serif;
+  --ff-primary: 'Montserrat', sans-serif;
   --ff-body: var(--ff-primary);
-  --ff-heading: var(--ff-primary); */
+  --ff-heading: var(--ff-primary); 
   
   /* font weights */
   
-  /* --fw-regular: 400;
-  --fw-semi-bold: 500;
-  --fw-bold: 700;  */
+  --fw-regular: 400;
+  --fw-regular-bold: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700; 
 
 
 
@@ -76,11 +77,22 @@ select {
 
 /* utility classes */
 
+.ff-primary-heading { font-family: var(--ff-heading);}
+.ff-body { font-family: var(--ff-body);}
+
+.fw-regular { font-weight: var(--fw-regular); }
+.fw-regular-bold { font-weight: var(--fw-regular-bold);}
+.fw-semibold { font-weight: var(--fw-semi-bold); }
+.fw-bold { font-weight: var(--fw-bold);}
+
+
 
 body {
   display:grid;
   grid-template-rows: min-content 1fr
-}
+}  
+
+
 
 .flow > * + * {
   margin-top:1rem;
@@ -121,9 +133,7 @@ body {
   border-bottom-left-radius: 1.52rem;
   text-align: center;
   text-decoration: none;
-  font-family: 'Montserrat';
   color: white;
-  font-weight: 500;
   font-size: 0.9rem;
   z-index:0;
 }
@@ -183,7 +193,7 @@ header {
   .headergrid__right {
     align-self: center;
   }
-}
+
 
 /* hero section code */
 
@@ -210,8 +220,6 @@ header {
 }
 
 .hero__title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
   font-size: clamp(1.5rem, 0.0625rem + 3vw, 2.5rem);
   color: white;
   text-transform: uppercase;
@@ -224,10 +232,7 @@ header {
 }
 
 .hero__subtitle {
-  font-family: "Montserrat", sans-serif;
-  
   font-size: 1.5rem;
-  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
@@ -272,6 +277,17 @@ h4[class*="hero__subtitle--i"]::after {
   animation: landingimage 5s ease;
 }
 
+.hero__right::before {
+  position: absolute;
+  content:"";
+  top:-30vw;
+  right: 30vw;
+  border:12px solid orange;
+  width:60vw;
+  height:60vw;
+  border-radius:50%;
+}
+
 .hero__image {
   width: 65%;
   margin:0 auto;
@@ -294,14 +310,9 @@ h4[class*="hero__subtitle--i"]::after {
   align-items:center;
 }
 
-
-
-
 .navmenu__link {
   position: relative;
   text-decoration:none;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
   text-transform: uppercase;
   color: white;
   font-size: 1rem;
@@ -351,10 +362,10 @@ h4[class*="hero__subtitle--i"]::after {
 }
 
 .navmenu__link:hover {
-  color: var(--link-color);
+  color: white;
 }
 
-[class*="n-"]:hover::before{
+[class*="n-"]:hover::before {
   color:hsl(0 0% 30%);
 }
 
