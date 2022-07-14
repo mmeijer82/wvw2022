@@ -2,18 +2,12 @@
 
 :root {
   
-  /* dark color
-  --clr-primary-400: ;
+  --clr-primary-400: 6 100% 30%;
+  --clr-accent-400: 16 88% 54%;
+  --clr-accent-100: 32 93% 54%;
+  --clr-secondary-400: 0 0% 20%;
+  --clr-secondary-100: 0 0% 60%;
   
-  /* lighter color */
-  /* --clr-primary-300: ;
-
-  --clr-accent-400:;
-  --clr-accent-100:;
-  
-  --clr-neutral-100: ;
-  --clr-neutral-900: ; */
-
   /* Font family */
   --ff-primary: 'Montserrat', sans-serif;
   --ff-body: var(--ff-primary);
@@ -76,6 +70,12 @@ select {
 
 
 /* utility classes */
+
+.color-primary-400 { color: hsl(var(--clr-primary) / 1); }
+.color-accent-400 { color: hsl(var(--clr-accent-400) / 1);}
+.color-accent-100 { color: hsl(var(--clr-accent-100) / 1);}
+.color-secondary-400 { color: hsl(var(--clr-secondary-400) / 1);}
+.color-secondary-100 { color: hsl(var(--clr-secondary-100) /1);}
 
 .ff-primary-heading { font-family: var(--ff-heading);}
 .ff-body { font-family: var(--ff-body);}
