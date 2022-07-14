@@ -190,9 +190,9 @@ header {
   width:100%;
 }
 
-  .headergrid__right {
-    align-self: center;
-  }
+.headergrid__right {
+    align-self: center;  
+}
 
 
 /* hero section code */
@@ -281,7 +281,7 @@ h4[class*="hero__subtitle--i"]::after {
   position: absolute;
   content:"";
   top:-30vw;
-  right: 30vw;
+  right: 10vw;
   border:12px solid orange;
   width:60vw;
   height:60vw;
